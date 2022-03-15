@@ -20,7 +20,7 @@ color: #FFFFFF;
 padding-top: 5em !important;
 }
 .text2{
-    font-family: 'Rajdhani';
+font-family: 'Rajdhani';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
@@ -56,9 +56,57 @@ text-align: center;
 color: #ffffff !important;
 
 }
+.row{
+    padding-top: 10em !important;
+    padding-left: 3em !important;
+}
 .img{
-    padding-top: 7em !important;
-    padding-left: 5em !important;
+    padding-top: 10em !important;
+    padding-left: 2em !important;
     padding-bottom: 5em !important;
     width: 120%;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px) {
+    .row{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .img{
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+    }
+    .text3{
+        padding-top: 0 !important;
+        text-align: center;
+    }
+    .text2{
+        padding-top: 0 !important;
+        text-align: center;
+    }
+    .rectangle{
+        
+        display: none;
+    }
+    .container-fluid{
+        justify-content: center;
+    }
+    .footbar-btn{
+        justify-content: center !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+    
+}
+
+@media only screen and (max-width: 425px){
+   
 }
