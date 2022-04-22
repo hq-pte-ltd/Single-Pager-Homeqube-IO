@@ -110,3 +110,32 @@ body {
   right: 0;
   bottom: 0;
 }
+
+.countdown{
+  font-family: "Rajdhani", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  transform: scale(2);
+  justify-content: center;
+  color: #ffffff;
+}
+
+.time{
+  font-family: "Rajdhani", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin: 22px;
+}
+
+.time h2{
+  font-family: "Rajdhani", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 -2px -6px;
+}
