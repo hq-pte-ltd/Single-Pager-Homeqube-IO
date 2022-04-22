@@ -116,7 +116,6 @@ body {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-
   display: flex;
   transform: scale(2);
   justify-content: center;
@@ -131,6 +130,14 @@ body {
   display: flex;
   flex-direction: column;
   margin: 22px;
+}
+.content{
+  font-family: "Rajdhani", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 3rem;
 }
 
 .time h2{
