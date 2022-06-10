@@ -4,94 +4,1199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Homeqube | Homebuilding for all through AI and blockchain">
     <meta name="description"
-    content="We are a Solana Based NFT “Launchpad-Marketplace” for Home Manufacturing, from 3D Printed Parts, Home Designs, 
-    Home System Algorithms, Decors, Fixtures, Furnitures, Prototypes, and related others to Homebuilding">
-    <title>Homeqube NFT Launchpad</title>
-    <link rel="shortcut icon" href="img/Favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    content="Homeqube is a home building app that empowers users to visualize their future homes & 
+    offers a network of manufacturers to optimize your design for every budget or taste.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/Icons/Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/slick.css">
+    <title>Homeqube IO</title>
 </head>
 <body>
-    <div class="container">
-       
-       <div class="row">
-          
-           <div class="col-md-6">
-               <h3 class="text3">   </h3>
-               <div class="content">   
-                <small>We are a Solana Based NFT “Launchpad-Marketplace” for Home Manufacturing, from 3D Printed Parts, Home Designs, 
-                    Home System Algorithms, Decors, Fixtures, Furnitures, Prototypes, and related others to homebuilding both for the 
-                    metaverse  and IRL.</small>
-                <br>
-                <br>
-                <small>
-                    
-                    More information on pricing, whitelisters, design contests and availability here:
-                </small>
-                <div class="col link d-flex align-items">
-                    <div>
-                        <a href="https://www.instagram.com/homeqube.ai/" target="_blank" rel="noreferrer noopener" class="flink-icon">
-                            <img class="footer-icon me-2" src="img/instagram.svg" alt="">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="logo" src="img/Homeqube-logo-black_small 1.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-3">
+                        <a href="pipeline.html" class="nav-link">
+                            <p class="nav-item-pipehome px-4 pt-4">
+                                stakeholders
+                            </p>
                         </a>
-                        <a href="https://twitter.com/homeqube_ai" target="_blank" rel="noreferrer noopener" class="flink-icon">
-                            <img class="footer-icon me-2" src="img/twitter.svg" alt="">
+                    </li>
+                    <li class="nav-item ms-2 ">
+                        <a href="qube-tokenomics.html" class="nav-link">
+                            <p class="nav-item-QToken px-4 pt-3">
+                                qube <br />tokenomics
+                            </p>
                         </a>
-                        <a href="https://www.facebook.com/Homeqube-Pte-Ltd-SG-110205561591276" target="_blank" rel="noreferrer noopener" class="flink-icon">
-                            <img class="footer-icon me-2" src="img/facebook.svg" alt="">
+                    </li>
+                    <li class="nav-item  ms-2">
+                        <a href="carbon-credit.html" class="nav-link">
+                            <p class="nav-item-CarbonCred px-4 pt-3">
+                                carbon <br />credit
+                            </p>
                         </a>
-                        <a href="https://www.linkedin.com/company/homeqube-pte-ltd/" target="_blank" rel="noreferrer noopener" class="flink-icon">
-                            <img class="footer-icon me-2" src="img/linkedin.svg" alt="">
+                    </li>
+
+                    <li class="nav-item dropdown ms-2 align-items-center">
+                        <div class=" dropdown  pt-3 text-center">
+                          
+                                <a class="nav-link dropdown-toggle a-link" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false" >
+                                <button onclick="location.href='about.html' " class="aboutlink">  About </button> 
+                                </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="AboutUs/people.html">OUR TEAM</a></li>
+                              <li><a class="dropdown-item" href="AboutUs/philosophy.html">OUR PHILOSOPHY</a></li>
+                             
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item ms-2 ">
+                        <a href="ip-assets.html" class="nav-link">
+                            <p class="nav-item-ipAssets px-4 pt-3">
+                                ip <br />assets
+                            </p>
                         </a>
-                        <a href="https://t.me/homeqube" target="_blank" rel="noreferrer noopener" class="flink-icon">
-                            <img class="footer-icon me-2" src="img/telegram.svg" alt="">
+                    </li>
+
+                 
+
+                    <li class="nav-item ms-2">
+                        <a target="blank" href="https://www.homeqube.io/" class="nav-link">
+                            <p class="nav-item-ipAssets px-4 pt-3">
+                                BUY <br /> QUBES
+                            </p>
                         </a>
-                    </div>
-                  </div>
+                    </li>
+                
+
+                    <li class="reslink nav-item dropdown me-4 align-items-center">
+                        <div class="dropdown pt-3 text-center">
+                            <a class="nav-link dropdown-toggle a-link nav-item-Resource" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="blog.html">BLOG</a></li>
+                              <li><a class="dropdown-item" href="news.html">NEWS</a></li>
+                              <li><a class="dropdown-item" href="faqs.html">FAQS</a></li>
+                              <li><a class="dropdown-item" href="esg.html">ESG</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+              
+                 
+
+                    <li class="nav-item ms-2 py-2 ms-2 text-center pt-3">
+                        <button class="footbar-button btn btn-lg rounded-pill" onclick="window.open('https://hqnftrialv2.xyz/')" type="button">Explore</button>
+                    </li>
+                </ul>
             </div>
-               <div id="countdown" class="countdown container-fluid">
-                   <div class="time">
-                       <h2 id="days">00</h2>
-                       <small>Days</small>
-                   </div>
+        </div>
+    </nav>
+    <!--Showcase-->
+    <section class="showcase text-light p-5 text-center text-sm-start">
+        <div class="container-bg container">
+            <div class="d-sm align-content-center justify-content-between container-content">
+                <div>
+                    <h1 class="intro">
+                        Design explore<br>And Collect Homeqube<br>
+                        Designs as NFT
+                    </h1>
 
-                   <div class="time">
-                    <h2 id="hours">00</h2>
-                    <small>Hours</small>
-                </div>
-                    <div class="time">
-                        <h2 id="minutes">00</h2>
-                        <small>Minutes</small>
-                    </div>
+                    <p class="intro-sentence text-uppercase">
+                       We are solana based NFT  “Launchpad-Marketplace”
+                        For home <br> manufacturing, from 3d printed parts, home designs,  home system <br> algorithms, decors, fixtures
+                        Furnitures, Prototypes, and <br> related others to homebuilding both for the metaverse and IRL. 
+                    </p>
 
-                    <div class="time">
-                        <h2 id="seconds">00</h2>
-                        <small>Seconds</small>
-                    </div>
-               
-               </div>
-               <br>
+                    <div class="intro-btn2">
+                       
 
-               <div class="footbar-btn pb-2">
+                        <!--
 
-                                <a href="https://www.homeqube.com/" target="_blank"><button class="footbar-button-home1 btn btn-lg rounded-pill" 
-                                    type="button">WWW.HOMEQUBE.COM</button></a>
+                        <button href="about.html" class="button2 btn btn-lg rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#home-modal-1">
+                        read more https://www.homeqube.ai/
+                        </button>
                             
-                                <a style="margin-left: 7px;" href="password.html"><button class="footbar-button-home1 btn btn-lg rounded-pill" 
-                                        type="button">EXPLORE NFT</button></a>
+                        -->
+
+                     
+
+                            <button  onclick="window.open('https://www.homeqube.ai/')" class="button2 btn btn-lg rounded-pill" >
+                           Create
+                            </button>
+             
+                        <button class="button1 btn btn-lg rounded-pill" onclick="window.open('https://hqnftrialv2.xyz/')"  type="button">
+                            <a href="#" class="a-link">Explore</a>
+                        </button>  
+                    </div>
+                    <div class="modal fade" id="home-modal-1" tabindex="-1" aria-labelledby="home-modal-1-label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="card-modal-title modal-header text-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark text-center">
+                                    <p class="col-md text">
+                                        <p class="col-md text1 pb-3">
+                                            <h3 class="text-uppercase"><b>What is Homeqube?</b></h3>
+                                            <p class="text-uppercase">
+                                            Homeqube is a home building application powered by artificial intelligence (AI) that empowers<br>
+                                            the user to build his future home. Through its built-in network of manufacturers, suppliers,<br> 
+                                            contractors, architects, and engineers, Homeqube helps future homeowners optimize their<br> 
+                                            design according to every budget, taste, lifestyle, and more
+                                            </p>
+
+                                            <h3 class="text-uppercase"><b>Our Mission</b></h3>
+                                            <p class="text-uppercase">Make the home building processes accessible to all through AI and blockchain technologies,<br> 
+                                            serving individuals’ and families’ requirements for long-term sustained success.<br></p>
+                                            
+                                            <h3 class="text-uppercase"><b>Our Vision</b></h3>
+                                            <p class="text-uppercase">Provide a better home building ecosystem through a socio-techno-economic platform that<br> 
+                                            creates more justice, equity, and liberty for the future.<br></p>
+
+                                            <h3 class="text-uppercase"><b>Core Values</b></h3>
+                                            <i class="text-uppercase">Transparency</i>
+                                            <p class="text-uppercase">Our actions and relationships are driven by honesty, authenticity, trust, and accountability.</p>
+
+                                            <i class="text-uppercase">Social Justice</i>
+                                            <p class="text-uppercase">We promote an equitable home building process through equal access to technology,<br> 
+                                                experienced partnerships, and opportunities</p>
+                                            
+                                            <i class="text-uppercase">Love of God and Neighbor</i>
+                                            <p class="text-uppercase">We care deeply about those we serve, as guided by mutual respect and a heart for service.</p>
+                                          
+                                            <h3 class="text-uppercase"><b>Who We Are</b></h3>
+                                            <p class="text-uppercase">
+                                                Homeqube is developed by a team of experts from multiple disciplines with years of experience<br>
+                                                in architecture, engineering, manufacturing, and construction.
+                                            </p>
+                                            <p class="text-uppercase">
+                                                Grounded on the premise that the main population of built architecture was built on top-down<br> 
+                                                construction processes, we address the limited opportunities for design and building efficiencies<br> 
+                                                and sustainability through our fresh approach. We want to introduce a new batch of potential<br> 
+                                                aesthetics for the next century, living with AI in our midst.
+                                            </p>
+                                            <a href="people.html" class="text-uppercase">Meet Our Team</a><br><br>
+                                            <h3 class="text-uppercase"><b>Homeqube guides you through the entire process of designing your home</b></h3><br>
+                                            <div class="card-group">
+                                                <div class="card h-25">
+                                                  <img class="card-img-top" src="img/index/OCR.svg" alt="Card image cap">
+                                                  <div class="card-body">
+                                                    <p class="card-text text-uppercase">Optical character recognition (OCR) to automatically plot your lot area</p>
+                                                  </div>
+                                                </div>
+                                                <div class="card h-25">
+                                                  <img class="card-img-top" src="img/index/Knobs.svg" alt="Card image cap">
+                                                  <div class="card-body">
+                                                    <p class="card-text text-uppercase">Agile design using knobs or user-centric robust controls</p>
+                                                  </div>
+                                                </div>
+                                                <div class="card h-25">
+                                                  <img class="card-img-top" src="img/index/Documents.svg" alt="Card image cap">
+                                                  <div class="card-body">
+                                                    <p class="card-text text-uppercase">Automatic generation of essential documents needed before move-in</p> 
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <br>
+                                              <br>
+
+
+                                            <h3 class="text-uppercase"><b>What Makes Us Different?</b></h3><br>
+                                            <ul style="text-align: left;">
+                                                <li>
+                                                <b class="text-uppercase">Homebuilding for everyone</b>
+                                                <p class="text-uppercase">Anyone with Internet access can use the app, whether or not you’re in the actual<br> 
+                                                    process of buying or building your home</p>
+                                                </li>
+                                                <li>
+                                                    <b class="text-uppercase">All the details you need</b>
+                                                    <p class="text-uppercase">Information on cost, mobility, and dynamics is readily available, helping you make<br> 
+                                                        informed decisions when it comes to the life-changing commitment of building the roof<br> 
+                                                        over your head</p>
+                                                </li>
+                                                <li>
+                                                    <b class="text-uppercase">Engage, play games, and have fun</b>
+                                                    <p class="text-uppercase">
+                                                        Users are incentivized to use the app through QUBE tokens and gamification. The more<br>
+                                                        you engage, the more value you get as the app grows and expands with exciting<br> 
+                                                        features
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <h3 class="text-uppercase"><b>Our Advantage</b></h3><br>
+                                            <p class="text-uppercase">
+                                                A decentralized online platform for home design has never been done before as it comes on the<br> 
+                                                heels of global problems that the world has never experienced before: a once-in-a-lifetime<br> 
+                                                pandemic, the worsening and accelerating impacts of climate change, and heightened cyber<br> 
+                                                insecurity. 
+                                            </p>
+                                            <p class="text-uppercase">
+                                                Through this application, we envision a significant reduction in common architectural and<br> 
+                                                engineering inefficiencies, such as material and labor waste, while giving both the supplier and<br> 
+                                                end user access to useful information and resources in the home building process.
+                                            </p>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yt-vid">
+                    <video width="100%" height="100%" autoplay muted loop>
+                        <source src="video/Homeqube-ICO.mp4" type="video/mp4" />
+                        <source src="video/Homeqube-ICO.ogg" type="video/ogg" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="showcase showcase-hidden">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="img/Home/Card1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase">Optimize Home Design According to <br> Every Budget, Taste and Lifestyle</h5>
+                  <br>
+                  <br>
+                  <div class="footbar-btn pb-2">
+                    <a href="pipeline.html" class="footbar-button btn btn-lg rounded-pill" role="button">Discover More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="img/Home/Card2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase">Design and Earn: <br> Discover our DAPP Games</h5>
+                  <br>
+                  <br>
+                  <p class="text-uppercase">Use your QUBE tokens to apply for DAO community membership now. Generate your arts and parts. Sell these in NFT marketplaces to earn tokens!</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="img/Home/Card3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase">Enlist Your Factory</h5>
+                  <br>
+                  <br>
+                  <p class="text-uppercase">Be visible and help users design their homes optimally by fielding your products inside the app, may they be architectural, structural, electrical, or interior design parts. </p>
+                </div>
+              </div>
+              <div class="carousel-item item-last" data-bs-interval="4000">
+                <img src="img/Home/Card4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase">Meet the Team </h5>
+                  <br>
+                  <br>
+                  <p class="text-uppercase">We’re thinkers, doers, and disruptors coming from construction, data science, design, and diverse backgrounds. 
+                    <br>
+                    <br>
+                    <br>
+                    <div class="footbar-btn pb-2">
+                        <a href="about.html" class="footbar-button btn btn-lg rounded-pill" role="button">About Us</a>
+                      </div>
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section> -->
+
+    <!--Boxes-->
+   
+    <section class="text-center content-eco1-bg text-sm-start">
+        <div class="col link d-flex align-items justify-content-center p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md eco-1-title">
+                        <h3 class="text-uppercase">WE ARE NOT JUST  AN NFT MARKETPLACE</h3>
+                        <div>
+                            <img src="img/Rectangle 22.svg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="d-sm align-content-center group3 content-info">
+                        <div class="img-poweredcon">
+                            <img class="img-fluid d-sm-block img-powered" src="img/Pipeline/Print-parts.jpg" alt="">
+                        </div>
+                        <div class="container-fluid pt-5">
+                            <p class="intro-sentence-homeapp d-md-wrap text-uppercase">
+                                <b>Avenue for 3d printing parts community:
+                                    <br>
+                                </b> We envisioned this website as a platform for showcasing 3d printed products for a variety of home building applications. <br><br>
+    
+                                <b>Showcase your home design ideas:
+                                    <br>
+                                </b> You can add your Home Building ideas as an NFT collection in our website. We will also have Home design contest, which will give you the opportunity against each other designs,
+                                for a chance of earning QUBE tokens, and displaying your work of art.
+                                <br>
+                                <br>
+                                We will be changing QUBE fee for Annual placement on our BETA Phase 2 around 2023.
+                                <br><br>
+    
+                                <b>Earn cubes:
+                                    <br>
+                                </b>What exactly is a qube? Qube is a token used in homeqube app. This token primarily used to access the home building features of forthcoming app. You can receive Qube by Buying our homeqube NFT Collections.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sliders-->
+    <!-- <div class="col link d-flex align-items justify-content p-5 content-eco1-bg">
+        <div class="container pt-5">
+            <div class="row">
+    
+                <section class="card-group1 col-lg-3 col-sm-12">
+                    <h3 class="carousel-title text-uppercase">
+                        Solving <br>Recurring <br>Problems in <br>Homebuilding
+                    </h3>
+    
+                </section>
+                <section class="card-group col-lg-9 col-sm-12">
+                    <div class="slider w-100">
+                        <div class="card border-0 slider_items" style="max-width:335px;height:385px;">
+                            <img src="img/Home/Carousel-Card-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    Process Constraints and Lead Time
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Traditionally, constructing homes can be long, painful, and costly. Hire professionals, apply for permits, and wait several months for a typical two-storey property.
+                                    <br>
+                                </p>
+                                    <div class="pt-2 pb-2">
+                                        <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                    </div>
+                                    <p class="card-text text-center text-uppercase">
+                                        Shorter lead time using AI, prefabrication, and easier parts assembly
+                                    </p>
+                            </div>
+                        </div>
+    
+                        <div class="card border-0 slider_items" style="max-width:335px;max-height:385px;">
+                            <img src="img/Home/Carousel-Card-2.jpg" class="card-img-top">
+    
+    
+    
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    Inefficiency of Centralized Knowledge
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Building and designing know-how stays with architects, engineers, and construction experts.
+                                    <br>
+                                </p>
+                                    <div class="pt-4 pb-2">
+                                        <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                    </div>
+                                    <p class="card-text text-center text-uppercase">
+                                    A unique, sustainable, and fun way to build and design your home -- and earn tokens while at it! Avoid buying costly softwares that are hard to use.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="card border-0 slider_items" style="max-width:335px;max-height:385px;">
+                            <img src="img/Home/Carousel-Card-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    No Direct Link to Manufacturers
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Reaching out to suppliers, canvassing, and purchasing take time. Sometimes, materials that arrive at the site are wrong, incomplete, or of subpar quality.
+                                    <br>
+                                </p>
+                                    <div class="pt-2 pb-2">
+                                        <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                    </div>
+                                    <p class="card-text text-center text-uppercase">
+                                    Every part of your home connects to a recommended manufacturer, improving the process.
+                                    </p>
+                                    
+    
+                                
+                            </div>
+                        </div>
+                        <div class="card border-0 slider_items" style="max-width:335px;max-height:385px;">
+                            <img src="img/Home/Carousel-Card-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    No Linkage Between E-Commerce and House Design
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Why can’t most users browse and canvass products remotely through online stores?
+                                   
+                                        <div class="pt-2 pb-2">
+                                            <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                        </div>
+                                    <p class="card-text text-center text-uppercase">
+                                        We provide users with information on specifications, brands, costs and more in the Homeqube app.
+                                    </p>
+                                   
+    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 slider_items" style="max-width:335px;max-height:385px;">
+                            <img src="img/Home/Carousel-Card-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    High Carbon Emissions
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Steel and concrete remain vital construction materials yet their production leads to a solid 4% of global CO2 emissions, accelerating the rate of climate change. 
+                                    <br>
+                                    
+                                        <div class="pt-2 pb-2">
+                                            <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                        </div>
+                                        <p class="card-text text-center text-uppercase">
+                                        Our parts and designs use special composites, which are proven eco-friendly, alternative structural materials 
+                                    </p>
+    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 slider_items" style="max-width:335px;max-height:385px;">
+                            <img src="img/Home/Carousel-Card-6.jpg" class="card-img-top h-5" alt="...">
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    Heavy Reliance on Skilled Manual Labor
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Tedious design computations, requirements, and labor inefficiencies, just don’t cut it, especially after COVID-19.
+                                    <br>
+                                </p>
+                                    <div class="pt-2 pb-2">
+                                        <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                    </div>
+                                    <p class="card-text text-center text-uppercase">
+                                        Homeqube parts, dry and pre-engineered, doesn't require deep technical and construction skills, and easy to assemble
+                                    </p>
+                                   
+                                
+                            </div>
+                        </div>
+                        <div class="card border-0 slider_items" style="max-width:335px;max-height:385px;">
+                            <img src="img/Home/Carousel-Card-7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title text-center text-uppercase">
+                                    Low Resilience Against Acts of Nature
+                                </p>
+                                <p class="card-text text-center text-uppercase">
+                                    Poor-quality houses are easy targets of strong winds, earthquakes, and severe weather events.
+                                    <br>
+                                </p>
+                                    <div class="pt-2 pb-2">
+                                        <img src="img/index/Homeqube-logo-black_small 1-50.svg" class="our-difference" alt="">
+                                    </div>
+                                    <p class="card-text text-center text-uppercase">
+                                        Parts and assembly methods that are tested and proven to withstand extreme conditions
+                                    </p>
+                                    
+                                
+                            </div>
+                        </div>
+    
+    
+                    </div>
+            </div>
+            </section>
+    
+        </div> 
+    </div> -->
+
+
+    <img src="img/Home/Left-Box-1.svg" alt="" class="box-animation-1 img-fluid">
+    <img src="img/Home/Left-Box-2(UpperSide).svg" alt="" class="box-animation-2">
+    <img src="img/Home/Left-Box-3(BottomSide).svg" alt="" class="box-animation-3">
+   
+   
+    <!-- Stakeholder Ecosystem Development -->
+    <br>
+    <br>
+    <br>
+
+ 
+    <section class="text-center content-eco1-bg text-sm-start">
+        <div class="col link d-flex align-items justify-content-center p-5">
+            <div class="container">
+
+        <div class="row">
+            <div class="col-md eco-1-title">
+                <h3 class="text-uppercase">Create, Explore, and Collect HomeQube Designs</h3>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col justify-content-center p-5">
+                    <img src="img/Icons/wallet.svg" alt="" srcset="">
+                    <br>
+                    <br>
+                    <p> <b> Set up wallet </b></p>
+
+                    <p>Connect to Homeqube.io after you set up your wallet. We currently support only Phantom wallets</p>
+            </div>
+
+            <div class="col justify-content-center p-5">
+                <img src="img/Icons/collection.svg" alt="" srcset="">
+                <br>
+                <br>
+                <p> <b>  Create Designs </b></p>
+
+                    <p>We will releasing our beta release of our homeqube app within the Q3 of 2022.
+                        Visit this <a href="https://www.qube.homeqube.com/" target="_blank" class="blog-link"  >link</a>
+                    </p>
+            </div>
+
+            <div class="col justify-content-center p-5">
+                <img src="img/Icons/nft.svg" alt="" srcset="">
+                <br>
+                <br>
+                <p> <b> Explore Designs </b></p>
+
+                    <p>Explore thousands of homeqube NFTs design in sale.</p>
+            </div>
+
+            <div class="col justify-content-center p-5">
+                <img src="img/Icons/sale.svg" alt="" srcset="">
+                <br>
+                <br>
+                <p> <b> Collect Design </b> </p>
+
+                    <p> Qube shall be given to the primary buyers of our NFTs. Qube can be used to access the features of fourthcoming app. </p>
+            </div>
+
+        </div>
+
+        
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-5 text-center">
+        <br>
+        <br>
+        <br>
+        <div class="col-md eco-1-title">
+            <h3 class="text-uppercase">Resouce for getting started</h3>
+        </div>
+        <p class="q-tokenomics-showcase-intro-lead p-3 text-uppercase">
+     
+        </p>
+        <center>
+            <div class="faq-rectangle"></div>
+            <br>
+            <br>
+
+
+        </center>
+    </section>
+
+
+
+    <section class="p-4 text-dark text-start">
+        <div class="accordion accordion-flush " id="accordionFlush">
+            <div class="accordion-item ">
+              <h2 class="accordion-header " id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <b class="text-uppercase">How to set up your wallet?</b>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                <p class="accordion-text text-uppercase">
+                    We currently supporting Phantom wallet for transactions in our website.
+                    Visit this <a href="https://help.phantom.app/hc/en-us/articles/4406388623251-How-to-create-a-new-wallet" target="_blank" class="blog-link" >guide</a> 
+                </p> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <b class="text-uppercase">How to buy NFT from this website?</b>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                <div class="accordion-body text-uppercase">
+                    <!-- <p class="accordion-text">Homeqube solves many of the recurring problems in homebuilding, including the following:</p> -->
+                    <ul class="accordion-text">
+                        <li>STEP 1: BY CLICKING THE 'CONNECT WALLET', CONNECT YOUR PREFERED CRYPTO WALLET TO OUR MARKETPLACE</li>
+                        <li>STEP 2: ON THE OUR WEBSITE YOU WILL SEE DIFFERENT CATEGORIES TO CHOOSE FROM. CLICK AND YOU WILL SEE THE LIST OF THE NFTS BASED ON THAT CATEGORIES.</li>
+                        <li>STEP 3: FIND YOUR PREFERED NFT. YOU CAN ALSO VIEW ALL OF THE INFORMATION OF THAT NFT WITH THEIR ATTRIBUTES AND PRICE.</li>
+                        <li>STEP 4: THEN, CLICK THE 'BUY NOW' BUTTON TO BUY NFT.</li>
+                        <li>STEP 5: CLICK APPROVE FOR THE TRANSACTION ON YOUR WALLET.</li>
+                       
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <b class="text-uppercase">How to download your 3d model files?</b>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                <div class="accordion-body text-uppercase">
+                    <!-- <p class="accordion-text">We will guide you through the entire process, including in the following areas:</p> -->
+                    <ul class="accordion-text">
+                        <li>STEP 1: OPEN YOUR CRYPTO WALLET.</li>
+                        <li>STEP 2: ON YOUR WALLET YOU WILL FIND YOUR COLLECTIBLES WHERE YOUR NFT IS STORED.</li>
+                        <li>STEP 3: CLICK YOUR LATEST NFT PURCHASED.</li>
+                        <li>STEP 4: CLICK THE '...' ON THE TOP RIGHT CORNER OF YOUR NFT THEN CLICK 'VIEW ON SOLSCAN'</li>
+                        <li>STEP 5: ONCE YOU'RE ON SOLSCAN WEBSITE, YOU WILL SEE ALL OF THE DETAILS AND OVERVIEW ON YOUR NFTS. CLICK THE METADATA TAB</li>
+                        <li>STEP 6: CLICK THE VIEW URI METADATA, THEN YOU WILL SEE ALL OF THE METADATAS THAT ARE STORED ON YOUR NFT.</li>
+                        <li>STEP 7: FIND THE "PROPERTIES" SECTION THEN "FILES", YOU WILL NOW SEE TWO DIFFERENT URI'S WITH THEIR TYPES, IMAGE/GIF AND GLB, COPY THE URI OF THE GLB TYPE WITH NO QUOTATIONS ("") ON BOTH SIDES THEN PASTE IT TO YOUR BROWSER.</li>
+                        <li>STEP 8: THE FILE WILL AUTOMATICALLY DOWNLOAD TO YOUR COMPUTER, THEN ONCE IT'S FINISHED YOU WILL NOW RENAMED IT TO .GLB FILE. THEN YOU CAN NOW VIEW IT TO YOUR 3D VIEWER.</li>
+                    </ul>
+                    <!-- <p class="accordion-text">
+                        At the heart of the app are the microsystems to build your house. Through these microsystems anchored on a deconstruction philosophy, produce various combinations of designs from the basic parts of the structure. Operate these microsystems using knobs to modify the design of your house, based on your preferences. 
+                    </p>
+
+                    <p class="accordion-text">
+                        As you turn the knobs, you will see real-time implications in the cost of your home, lifestyle metrics, mobility metrics, and other values to guide you in the design. As the app’s name implies, the massing of the home is based on cubes. 
+                    </p> -->
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      <b class="text-uppercase">How to claim your qube?</b>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+                  <div class="accordion-body text-uppercase">
+
+                    <ul class="accordion-text">
+                            <li>STEP 1: ON OUR WEBSITE, CLICK THE CLAIM QUBE ON THE NAVIGATION BAR</li>
+                            <li>STEP 2: PASTE THE SOLSCAN LINK AND YOUR PERSONAL EMAIL ADDRESS.</li>
+                            <li>YOU CAN FIND THE SOLSCAN LINK ON YOUR CRYPTO WALLET, WHERE YOUR LATEST PURCHASED NFT STORED. CLICK 'VIEW ON SOLSCAN', THEN COPY THE URL ON THE TOP OF YOUR BROWSER.</li>
+                            <li>STEP 3: CLICK THE 'SUBMIT' BUTTON THEN WAIT FOR OUR EMAIL.</li>
+                    </ul>
+                      <!-- <p class="accordion-text">
+                        The freemium version of the app will provide the first set of knobs, which can produce cube massing. The arrangement of the cubes will depend on the three knobs, namely the generation path knob, density knob, and complexity knob.
+                      </p>
+                      <p class="accordion-text">
+                        You may arrange various combinations of the cubes, which are constrained within the allowable buildable area and a maximum number of stories indicated in the input. More knobs will be developed and thus expand the possibilities of home design in-app. You’ll surely have loads of fun in the process! 
+                      </p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <b class="text-uppercase">How to add your own home design NFT collection to our website? </b>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlush">
+                  <div class="accordion-body text-uppercase">
+                       <p class="accordion-text">
+                       You may answer this <a href="" class="blog-link"> form </a>  or email us at about@homeqube.com for your interested in posting your collection 
+                       </p>
+                     
+                      <!-- <-- <p class="accordion-text">
+                        Users get an added dose of fun using Homeqube through QUBE tokens and gamification. The more you engage, the more we can glean on your activities and provide better value to your homebuilding venture. Learn more about 
+                        <a href="qube-tokenomics.html">QUBE Tokenomics. </a>
+                      </p> --> 
+                  </div>
+                </div>
+              </div>
+
+            
+          
+
+
+
+          </div>
+    </section>
+
+    <!-- <section class="text-center content-eco1-bg text-sm-start">
+        <div class="col link d-flex align-items justify-content-center p-5">
+            <div class="container">
+                <div class="row">
+                        <div class="col">
+                            he
+                            
+                        </div>
+
+                        <div class="col">
+                            he
+                            
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- <section class="content-eco1-bg">
+        <div class="col link d-flex align-items justify-content-center p-5">
+            <div class="container">
+                <div class="content-bg">
+                    <div class="row">
+    
+                        <div class="col-md eco-1-title">
+                            <h2>Stakeholder Ecosystem Development</h2>
+                            <div>
+                                <img src="img/Rectangle 22.svg" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="d-sm-flex align-content-center group4">
+                        <div class="intro-eco-sentence pt-5 text-uppercase" style="width:50%">
+                            <p>
+                                Homeqube offers an end-to-end building solution process for homebuilding and design
+                                using cloud computing, blockchain, and AI capabilities. We harness the power of AI and
+                                machine learning to push the boundaries in home design creativity.
+                            </p>
+                            <p>
+                                True to the spirit of stakeholder inclusion, the Building Environments shall be deployed
+                                on both web 2.0 and web 3.0 to capture innovation at different levels of contributory
+                                participation.
+                            </p>
+                            <p>
+                                The end result: a Built Environment synergized into the future, creating a semantic web
+                                that serves at an industrial-revolutionary scale.
+                            </p>
+                                
+                           
+    
+                        </div>
+                        <img class="img-fluid w-50 d-none d-sm-block" src="img/Pipeline/Diagram.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section> -->
+    <br>
+    <br>
+    <br>
+    <br>
+                        <br>
+    <img src="img/Home/Right-Box-1(Faded).svg" class="img-fluid right-box-animation-1" alt="">
+    <img src="img/Home/Right-Box-2(Upper).svg" class="img-fluid right-box-animation-2" alt="">
+    <img src="img/Home/Right-Box-3(Bottom).svg" class="img-fluid right-box-animation-3" alt="">
+    <!-- Call to Action Ecosystem Matrix by Being a DAO MEMBER -->
+    <!-- <section class="p-5 text-center content-eco1-bg">
+        <div class="container">
+            <div class="content-bg">
+                <div class="row">
+                </div>
+                <div class="d-sm-flex align-content-center group4">
+                        <img class="img-fluid w-50 d-none d-sm-block" src="img/index/DAO.svg" alt="">
+                    <div class="container">
+                        <h1 class="intro-eco">
+                            <div class="span-eco text-uppercase">
+                                Call to Action Ecosystem Matrix by Being
+                                <br> a DAO ARCHITECTURE MEMBER
+                            </div>
+                        </h1>
+                        <p class="intro-eco-sentence text-uppercase">
+                            Homeqube offers options on how you could earn and use Tokens we call<br>  
+                            (QUBE) inside the ecosystem. These calls to action are the recommended<br>
+                            paths to get the most out of our product:
+                        </p>
+                        <ul class="intro-eco-sentence text-uppercase">
+                            <li>To Design Parts and Knobs</li>
+                            <li>To Produce Parts</li>
+                            <li>To Procure Parts </li>
+                            <li>To Play and Build</li>
+                        </ul>
+                        <div class="intro-eco-button">
+                            <button class="eco-button btn btn-outline-dark btn-lg rounded-pill" type="button"
+                                data-bs-toggle="modal" data-bs-target="#home-modal-2">
+                                read more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <div class="modal fade" id="home-modal-2" tabindex="-1" aria-labelledby="home-modal-2-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="card-modal-title modal-header text-center">
+                <div class="col-md modal-title" id="home-modal-1">
+                    
+                    <h2 class="text-uppercase">Call to Action Ecosystem Matrix by Being a DAO MEMBER</h2>
+                    <div>
+                        <img src="img/Rectangle 22.svg" alt="" class="square-2">
+                    </div>
+                
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+                
+                  
+                       <div class="d-flex flex-column text-uppercase">
+                        <div>
+                            <p class="col-md text1">
+                            Homeqube offers options on how you could earn and use Tokens we call (QUBE) inside the ecosystem. These calls to action are the recommended paths to get the most out of our product:</p>
+                            <ul class="text1">
+                            <li>To Design Parts and Knobs</li>
+                            <li>To Produce Parts</li>
+                            <li>Procure Parts</li> 
+                            <li>To Play and Build</li>
+                        </ul>
+                        <img src="img/index/image 5.jpg" alt="" class="img-fluid justify-content-center">
+                        <br>
+                        
+                        <br>
+                        <p class="text1">
+                        At the heart of the App is the “Knobs” to build the houses. These are based on deconstruction 
+                        philosophies where different combinations of designs can be produced from the basic parts of the 
+                        system. These Knobs are operated to modify the design of the house based on the users’ preferences. 
+                        As you turn the Knobs you will see real-time implications in the cost of your home, lifestyle metrics, 
+                        mobility metrics, and other value-precepts to guide you in the design decisions. As the App’s name 
+                        implies, the massing of the home is based on cubes which represent a volumetric representation of a 
+                        proposed system.
+                        </p>
+                        
+                        </div>
+                        <div>
+                            <div class="flex-modal-class d-inline-flex justify-content-between">
+                                <div class="flex-text-div w-50 pe-5 pt-5">
+                                    <p class="col-md text1">
+                                        We intend to develop CI/CD of Knobs which we coin as “System Products” for the BE’s full 
+                                        optimization case uses which encompasses engineering, architecture, and construction multi stakeholder case uses. Our first Proof of Concept (POC) of the App, which will be available to the public, will 
+                                        have the first set of Knobs which can produce the first massing structure. The arrangement of the 
+                                        cubes will depend on these Knobs: namely the generation path Knob, Density Knob, and Complexity 
+                                        Knob. Users can have various arrangement combinations of the cubes which are constrained within 
+                                        the allowable buildable area and a maximum number of stories indicated in the input for your lot 
+                                        information.
+                                    </p>
+                                </div>
+                                
+                            
+                            <div class="flex-img-div ps-5">
+                                <img src="img/index/image 6.jpg" style="width: 90%;" class="img h-40 justify-content-center">
+                            </div>
+                        </div>
+                        </div>
+                        <div>
+                            <div class="flex-modal-class d-inline-flex justify-content-between">
+                                
+                                
+                            
+                            <div class="pe-2">
+                                <img src="img/index/image 7.jpg" style="width: 90%;" alt="" class="img-fluid justify-content-center">
+                                <span style="font-size: 13px !important;font-weight: bold !important;text-align: center;" class="text1"><br>Figure 5: Tradespace Exploration For Offshore Design (Curry, Rehn, et. al. 2017)</span>
+                            </div>
+                            <div class="flex-text-div w-50 ps-2 pt-5">
+                                <p class="col-md text1">
+                                    As the app development progress, more knobs will be further developed. These knobs will 
+                                    represent algorithmic processes and design variables on different styles of massing, parts, mobility, 
+                                    design intent, enclosures, and other variables that affect home design. These knobs will expand the 
+                                    possibilities of home design by tweaking these variables that affect the design of homes. By cloud 
+                                    computing, it is possible to generate a Tradespace plot on the different pegs of houses in a few days
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                       </div>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+   
+    <img src="img/Home/2nd-Box-Left.svg" alt="" class="left-box-2nd">
+    <!-- AI -->
+    <!-- <section class="p-5 text-center content-eco1-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md eco-1-title">
+                    <h2>Artificial intelligence and machine learning</h2>
+                    <div>
+                        <img src="img/Rectangle 22.svg" alt="">
+                    </div>
                 </div>
 
-                <!-- https://hqnftrialv2.xyz/  -->
+                <div class="d-sm align-content-center group5 pt-5 ai-content">
+                    <div>
+                        <img class="img-fluid d-sm-block" src="img/index/AI.jpg" alt="">
+                    </div>
+                    <p class="intro-sentence-homeapp">  mt-3 pt-5 ms-5
+                        Before the popularization of machine learning, the computational design<br>
+                        approach is used in making design models. This approach is based on<br>
+                        running algorithms and codes to make a parametric family representation<br>
+                        of shapes and sizes. With the introduction of machine learning and AI,<br>
+                        optimization and exploration of different designs were added. This<br>
+                        additional step in the design process gives users different possible design<br>
+                        combinations and comes up with the most optimal design.<br><br>
+                        Here at Homeqube, we’ll harness the power of AI and ML to make<br>
+                        different possible combinations of home designs, and provide the most<br>
+                        optimal design based on the user’s need. Also, as the system generates<br>
+                        more data, more home design styles will the unearthed. Our system will<br>
+                        push both the human and machine capacity in generating creative ideas.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <img src="img/Home/Right-Box-1(Faded).svg" class="img-fluid right-box-2nd-animation-1" alt="">
+    <img src="img/Home/Right-Box-2(Upper).svg" class="img-fluid right-box-2nd-animation-2" alt="">
+    <img src="img/Home/Right-Box-3(Bottom).svg" class="img-fluid right-box-2nd-animation-3" alt="">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="p-5 text-center content-eco1-bg">
+        <div class="ai-header">
+            <p class="ai-title">
+                Event Roadmap
+            </p>
+            <p>
+                We listed 2,450 regular and 50 special NFTs on first ever Homeqube Design NFT collection. After we hit a sell percentage, we can proceed on other developments of our work
+            </p>
+            <br>
+               
+                <center>
+            <div class="home-rectangle"></div>
+                
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <img src="img/index/world 1.jpg" class="img-fluid worldmap1" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="timeline-steps aos-init aos-animate text-uppercase" data-aos="fade-up">
+            <div class="timeline-step">
+                <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                    <p>0%</p>
+                    <div class="inner-circle"></div>
+                    <p class="roadmap-header-h3">NFT Website lauching.</p>
+                    <div class="roadmap-list1">
+                        <!-- <ul class="list-group">
+                            <li class="list-group-item border-0 list-active-group">Team assemble</li>
+                            <li class="list-group-item border-0 list-active-group">App conceptualization</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                    <p>15%</p>
+                    <div class="inner-circle"></div>
+                    <p class="roadmap-header-h3">Start development of the full version of homeqube app.
+                    </p>
+                    <div class="roadmap-list1">
+                        <!-- <ul class="list-group">
+                            <li class="list-group-item border-0 list-active-group">Whitepaper release</li>                      
+                            <li class="list-group-item border-0 list-active-group">ICO website and Freemium launching</li>
+                            <li class="list-group-item border-0 list-active-group">Pre-sale and private sale</li>
+                            <li class="list-group-item border-0 list-active-group">Social media buildup</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                    <p>40%</p>
+                    <div class="inner-circle"></div>
+                    <p class="roadmap-header-h3">Tie-up with designers, manufacturers, and professionals for app development.
+                    <div class="roadmap-list1">
+                        <!-- <ul class="list-group">
+                            <li class="list-group-item border-0">Release of Homeqube full version 1.0</li>
+                            <li class="list-group-item border-0">Tie-up with designers, manufacturers, professionals</li>
+                            <li class="list-group-item border-0">Open source of Home Building for AI/ML development</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                    <p>70%</p>
+                    <div class="inner-circle"></div>
+                    <p class="roadmap-header-h3">Buying 3d printing equipments for home construction</p>
+                    <div class="roadmap-list1">
+                        <!-- <ul class="list-group">
+                            <li class="list-group-item border-0">Community expansion to other countries</li>
+                            <li class="list-group-item border-0">Manufacturer franchise for additive manufacturing</li>
+                            <li class="list-group-item border-0">AI/ML development</li>
+                            <li class="list-group-item border-0">Listing of token to top token exchange market</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-step mb-0">
+                <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                    <p>100%</p>
+                    <div class="inner-circle"></div>
+                    <p class="roadmap-header-h3">Initiation of the qube liquidity pool.</p>
+                    <div class="roadmap-list1">
+                        <!-- <ul class="list-group">
+                            <li class="list-group-item border-0">Carbon credit issuance to homes</li>
+                            <li class="list-group-item border-0">Progressive app development</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+      <br>
+
+    <!-- <section class="footbar text-light">
+        <div class="container ">
+            <div class="d-md-flex justify-content-between align-items-center ">
+                <h3 class="footbar-text text-uppercase">
+                    Dive Into the Future of Homebuilding
+                    <p class="footbar-text-lead text-uppercase">
+                        Faster, more cost-efficient, more informed decisions.<br> 
+                        Got questions? Visit our FAQs page. 
+
+                    </p>
+                </h3>
+                <div class="footbar-btn pb-2">
+                    <a href="faqs.html"><button class="footbar-button-home1 btn btn-lg rounded-pill" type="button">VISIT FAQ</button></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer  -->
+    <footer class="p-3 bg-dark text-white text-center position-relative pt-5 pb-5 text-uppercase">
+        <div class="container px-4">
+          <div class="row gx-3">
+            <div class="col-md-6 container-fluid">
+                <a href="contact.html" class="button-contact">
+                    <img src="img/contact-button.svg" class="button-contact-img">
+                </a>
+              <img src="img/Homeqube-logo-black_small 1.svg" class="footer-logo" alt="">
+              <p class="text-uppercase footer-text pt-3">home building process accessible to all through
+               <br> AI and blockchain technology
+                <br>
+                <br>
+                <br>
+                <br>
+
+               <b> POWERED BY LIQ.NFT.COM</b>
+            </p>
+           
+              
+            </div>
 
 
-           </div>
-       </div>
-    
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+            <div class="col link d-flex align-items justify-content-center">
+                <div>
+                    <a href="https://www.instagram.com/homeqube.ai/" target="_blank" rel="noreferrer noopener" class="flink-icon">
+                        <img class="footer-icon me-2" src="img/Icons/instagram.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/homeqube_ai" target="_blank" rel="noreferrer noopener" class="flink-icon">
+                        <img class="footer-icon me-2" src="img/Icons/twitter.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/Homeqube-Pte-Ltd-SG-110205561591276" target="_blank" rel="noreferrer noopener" class="flink-icon">
+                        <img class="footer-icon me-2" src="img/Icons/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/company/homeqube-pte-ltd/" target="_blank" rel="noreferrer noopener" class="flink-icon">
+                        <img class="footer-icon me-2" src="img/Icons/linkedin.svg" alt="">
+                    </a>
+                    <a href="https://t.me/homeqube" target="_blank" rel="noreferrer noopener" class="flink-icon">
+                        <img class="footer-icon me-2" src="img/Icons/telegram.svg" alt="">
+                    </a>
+                    <p class="footer-text-2 mt-2">
+                        about@homeqube.com
+                        <br>
+                        <a href="terms.html" class="a-link" style="line-height: 20px;">Terms of Use</a>
+                         <br>
+                         <a href="policy.html" class="a-link">Privacy Policy</a>
+                         <br>
+                         Homeqube Pte. Ltd.™
+                         <br>
+                         Homeqube inc.
+                    </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </footer>
+    <!-- End of footer -->
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
+
 </html>
